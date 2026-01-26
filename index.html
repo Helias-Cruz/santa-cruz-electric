@@ -1,185 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Santa Cruz Electric & Power | Riverside & Inland Empire</title>
-  <meta name="description" content="Residential & light commercial electrical services in Riverside & the Inland Empire. EV chargers, lighting, outlets, solar hookups, and troubleshooting. Call or text (949) 344-3449." />
-  <style>
-    :root { --bg:#0b0b0c; --card:#141416; --text:#f4f4f5; --muted:#b7b7be; --accent:#ff8a1e; --bolt:#ffd400; }
-    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.35}
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:1050px;margin:0 auto;padding:22px}
-    .nav{display:flex;gap:14px;align-items:center;justify-content:space-between;padding:14px 0}
-    .brand{display:flex;gap:12px;align-items:center}
-    .logo{
-      width:44px;height:44px;border-radius:50%;
-      display:grid;place-items:center;
-      background:radial-gradient(circle at 30% 30%, #1f5cff 0%, #0b0b0c 60%);
-      border:1px solid rgba(255,255,255,.12);
-      box-shadow:0 0 18px rgba(255,212,0,.12);
-      font-weight:800;
-    }
-    .logo span{color:var(--bolt);text-shadow:0 0 10px rgba(255,212,0,.35)}
-    .brand h1{margin:0;font-size:15px;letter-spacing:.6px;text-transform:uppercase}
-    .brand p{margin:2px 0 0;color:var(--muted);font-size:12px}
-    .ctaRow{display:flex;gap:10px;flex-wrap:wrap}
-    .btn{
-      padding:11px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.14);
-      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
-      display:inline-flex;gap:10px;align-items:center;font-weight:700
-    }
-    .btnPrimary{
-      border:1px solid rgba(255,138,30,.5);
-      background:linear-gradient(180deg, rgba(255,138,30,.25), rgba(255,138,30,.12));
-      box-shadow:0 0 20px rgba(255,138,30,.16);
-    }
-    .hero{padding:26px 0 10px;display:grid;gap:18px;}
-    .heroCard{
-      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
-      border:1px solid rgba(255,255,255,.12);
-      border-radius:18px;
-      padding:22px;
-      box-shadow:0 0 28px rgba(0,0,0,.35);
-    }
-    .kicker{color:var(--muted);font-size:13px;margin:0 0 8px}
-    .title{margin:0;font-size:34px;letter-spacing:.6px;text-transform:uppercase;}
-    .subtitle{margin:10px 0 0;color:var(--muted);font-size:16px;max-width:58ch}
-    .tagline{margin:14px 0 0;color:#f7f1e6;font-weight:700}
-    .bullets{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 0;padding:0;list-style:none}
-    .chip{
-      padding:8px 10px;border-radius:999px;
-      background:rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.12);
-      color:#fff;font-size:13px
-    }
-    .grid{display:grid;gap:14px;margin:18px 0}
-    @media (min-width: 820px){ .grid{grid-template-columns:repeat(3,1fr)} }
-    .card{
-      background:var(--card);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius:16px;
-      padding:16px;
-    }
-    .card h3{margin:0 0 8px;font-size:15px}
-    .card p{margin:0;color:var(--muted);font-size:13px}
-    .section{padding:14px 0}
-    .section h2{margin:0 0 10px;font-size:18px;letter-spacing:.4px;text-transform:uppercase}
-    .twoCol{display:grid;gap:14px}
-    @media (min-width: 820px){ .twoCol{grid-template-columns:1.2fr .8fr} }
-    .mini{color:var(--muted);font-size:13px;margin:0}
-    .contactBox{
-      display:grid;gap:10px;
-      background:linear-gradient(180deg, rgba(255,138,30,.18), rgba(20,20,22,.8));
-      border:1px solid rgba(255,138,30,.35);
-      border-radius:18px;
-      padding:16px;
-    }
-    .phone{font-size:22px;font-weight:900;letter-spacing:.4px}
-    .footer{padding:26px 0;color:var(--muted);font-size:12px}
-    .smallLinks{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Santa Cruz Electric & Power</title>
+  <meta name="description" content="Residential & light commercial electrical services in Riverside & the Inland Empire."/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
-  <div class="wrap">
-    <header class="nav">
-      <div class="brand">
-        <div class="logo" aria-label="Santa Cruz Electric & Power logo"><span>⚡</span></div>
-        <div>
-          <h1>Santa Cruz Electric &amp; Power</h1>
-          <p>Comfort • Safety • Energy • Style • Power</p>
-        </div>
-      </div>
 
-      <div class="ctaRow">
-        <a class="btn btnPrimary" href="tel:+19493443449">Call (949) 344-3449</a>
-        <a class="btn" href="sms:+19493443449?&body=Hi%20Santa%20Cruz%20Electric%20%26%20Power%2C%20I%20need%20help%20with%3A%20">Text Me</a>
-      </div>
-    </header>
+<header class="navbar">
+  <div class="logo">⚡ Santa Cruz Electric & Power</div>
+  <div class="nav-actions">
+    <a href="tel:9493443449" class="call-btn">Call (949) 344-3449</a>
+    <a href="#contact" class="text-btn">Text Me</a>
+  </div>
+</header>
 
-    <main>
-      <section class="hero">
-        <div class="heroCard">
-          <p class="kicker">Serving Riverside &amp; the Inland Empire</p>
-          <h2 class="title">Residential &amp; Light Commercial Electrical</h2>
-          <p class="subtitle">
-            Clean, reliable electrical work for homeowners who want it done right — from EV chargers and lighting upgrades
-            to outlets, solar/equipment hookups, and troubleshooting.
-          </p>
-          <p class="tagline">Fast response • Clear communication • Quality workmanship</p>
+<section class="hero">
+  <h1>Residential & Light Commercial Electrical</h1>
+  <p class="sub">
+    Clean, reliable electrical work for homeowners who want it done right —  
+    from EV chargers and lighting upgrades to outlets, solar/equipment hookups, and troubleshooting.
+  </p>
 
-          <ul class="bullets">
-            <li class="chip">EV Chargers</li>
-            <li class="chip">Lighting (Indoor/Outdoor)</li>
-            <li class="chip">Outlets &amp; Switches</li>
-            <li class="chip">Solar / Equipment Hookups</li>
-            <li class="chip">Troubleshooting &amp; Repairs</li>
-          </ul>
-
-          <div style="margin-top:16px" class="ctaRow">
-            <a class="btn btnPrimary" href="tel:+19493443449">Call Now</a>
-            <a class="btn" href="#services">See Services</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="services" class="section">
-        <h2>Services</h2>
-        <div class="grid">
-          <div class="card"><h3>EV Charger Installation</h3><p>Safe, clean installs with proper power setup for daily charging.</p></div>
-          <div class="card"><h3>Interior Lighting</h3><p>Fixtures, recessed lighting, upgrades for better comfort and visibility.</p></div>
-          <div class="card"><h3>Exterior &amp; Security Lighting</h3><p>Outdoor and security lighting that improves safety and curb appeal.</p></div>
-          <div class="card"><h3>Outlets &amp; Receptacles</h3><p>Install, replace, and upgrade outlets for reliable power where you need it.</p></div>
-          <div class="card"><h3>Switches &amp; Dimmers</h3><p>Replace faulty switches or upgrade to dimmers/smart-ready setups.</p></div>
-          <div class="card"><h3>Troubleshooting &amp; Repairs</h3><p>Flickering lights, dead outlets, breakers tripping — get the cause found and fixed.</p></div>
-          <div class="card"><h3>Solar &amp; Equipment Hookups</h3><p>Conduit runs and electrical connections for solar-related equipment.</p></div>
-          <div class="card"><h3>Appliance Electrical Connections</h3><p>Dedicated circuits and proper connections for home equipment and appliances.</p></div>
-          <div class="card"><h3>Light Commercial Support</h3><p>Small-business installs and repairs (case-by-case).</p></div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="twoCol">
-          <div class="card">
-            <h2>About</h2>
-            <p class="mini">
-              Santa Cruz Electric &amp; Power provides reliable electrical services for homes and small businesses across Riverside and the Inland Empire.
-              My focus is simple: safety, quality, and clear communication — so you feel confident letting me work in your home.
-            </p>
-            <div style="height:12px"></div>
-            <p class="mini"><strong>Hours:</strong> Mon–Fri 4:00 PM – 10:00 PM • Weekends by appointment</p>
-            <p class="mini"><strong>Service Area:</strong> Riverside &amp; Inland Empire</p>
-          </div>
-
-          <aside class="contactBox" id="contact">
-            <div>
-              <div class="kicker" style="margin:0 0 6px">Need help fast?</div>
-              <div class="phone">(949) 344-3449</div>
-              <p class="mini" style="margin-top:6px">Call or text a quick description + your city.</p>
-            </div>
-            <div class="ctaRow">
-              <a class="btn btnPrimary" href="tel:+19493443449">Call</a>
-              <a class="btn" href="sms:+19493443449?&body=Hi%20Santa%20Cruz%20Electric%20%26%20Power%2C%20I%20need%20help%20with%3A%20%0A-%20City%3A%20%0A-%20Issue%3A%20%0A-%20Best%20time%20to%20reach%20me%3A%20">Text</a>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <footer class="footer">
-        <div>© <span id="y"></span> Santa Cruz Electric &amp; Power • Riverside &amp; Inland Empire</div>
-        <div class="smallLinks">
-          <a href="tel:+19493443449">Call</a>
-          <a href="sms:+19493443449">Text</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </footer>
-    </main>
+  <div class="badges">
+    <span>Fast response</span>
+    <span>Clear communication</span>
+    <span>Quality workmanship</span>
   </div>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <div class="hero-buttons">
+    <a href="#services" class="primary">See Services</a>
+    <a href="#contact" class="secondary">Get a Quote</a>
+  </div>
+</section>
+
+<section class="service-tags">
+  <span>EV Chargers</span>
+  <span>Lighting</span>
+  <span>Outlets & Switches</span>
+  <span>Solar / Equipment Hookups</span>
+  <span>Troubleshooting</span>
+</section>
+
+<section id="services" class="services">
+  <h2>Services</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>EV Charger Installation</h3>
+      <p>Safe, clean installs with proper power setup for daily charging.</p>
+    </div>
+
+    <div class="card">
+      <h3>Interior Lighting</h3>
+      <p>Fixtures, recessed lighting, upgrades for better comfort and visibility.</p>
+    </div>
+
+    <div class="card">
+      <h3>Exterior & Security Lighting</h3>
+      <p>Outdoor and security lighting that improves safety and curb appeal.</p>
+    </div>
+
+    <div class="card">
+      <h3>Outlets & Receptacles</h3>
+      <p>Install, replace, and upgrade outlets for reliable power where you need it.</p>
+    </div>
+
+    <div class="card">
+      <h3>Switches & Dimmers</h3>
+      <p>Replace faulty switches or upgrade to smart-ready setups.</p>
+    </div>
+
+    <div class="card">
+      <h3>Troubleshooting & Repairs</h3>
+      <p>Flickering lights, dead outlets, breakers tripping — get the cause fixed.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <h2>About Santa Cruz Electric & Power</h2>
+  <p>
+    Serving Riverside and the Inland Empire with honest, dependable electrical service.  
+    Focused on safety, clean workmanship, and long-term reliability.  
+    Every job is treated with care, precision, and respect for your home.
+  </p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Serving Riverside & the Inland Empire</p>
+  <p>Hours: Mon–Fri 4–10 PM · Weekends by appointment</p>
+
+  <div class="contact-actions">
+    <a href="tel:9493443449" class="primary">Call Now</a>
+    <a href="sms:9493443449" class="secondary">Text Me</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Santa Cruz Electric & Power</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
